@@ -23,7 +23,7 @@ module sonic-portchannel {
 	description "PORTCHANNEL yang Module for SONiC OS";
 
 	revision 2019-07-01 {
-		description "First Revision";
+		description "Increased range for min_links";
 	}
 
 	container sonic-portchannel {
@@ -64,8 +64,8 @@ module sonic-portchannel {
 				}
 
 				leaf min_links {
-					type uint8 {
-						range 1..128;
+					type uint16 {
+						range 1..1024;
 					}
 				}
 
