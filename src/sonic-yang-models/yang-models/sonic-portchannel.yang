@@ -27,7 +27,7 @@ module sonic-portchannel {
     description "PORTCHANNEL yang Module for SONiC OS";
 
     revision 2021-05-13 {
-        description "Increased range for min_links";
+        description "Change min-links valid range from 1-128 to 0-1024";
     }
 
     revision 2021-03-31 {
